@@ -345,11 +345,92 @@ const Home = () => {
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
               <center>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
                     <img
                       src={specialist}
                       class="card-img-top"
                       alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
                     />
                     <div class="card-body">
                       <p class="card-text">
@@ -360,11 +441,12 @@ const Home = () => {
                   </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
                     <img
                       src={specialist}
                       class="card-img-top"
                       alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
                     />
                     <div class="card-body">
                       <p class="card-text">
@@ -374,87 +456,13 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
                     <img
                       src={specialist}
                       class="card-img-top"
                       alt="Sunset Over the Sea"
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
                     />
                     <div class="card-body">
                       <p class="card-text">
@@ -489,21 +497,21 @@ const Home = () => {
       <div className="color-card-main">
        <div className="heading-1">OUR SERVICES</div>
        <div className="service-1">
-       <div class="card" style={{width:"22rem",height:"18rem"}}>
+       <div class="card" style={{width:"22rem"}}>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-<div class="card" style={{width:"22rem",height:"18rem"}}>
+<div class="card" style={{width:"22rem"}}>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-<div class="card" style={{width:"22rem",height:"18rem"}}>
+<div class="card" style={{width:"22rem"}}>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -512,21 +520,21 @@ const Home = () => {
 </div>
        </div>
        <div className="service-1">
-       <div class="card" style={{width:"22rem",height:"18rem"}}>
+       <div class="card" style={{width:"22rem"}}>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-<div class="card" style={{width:"22rem",height:"18rem"}}>
+<div class="card" style={{width:"22rem"}}>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-<div class="card" style={{width:"22rem",height:"18rem"}}>
+<div class="card" style={{width:"22rem"}}>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
