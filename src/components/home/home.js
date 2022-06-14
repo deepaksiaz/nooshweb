@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.css";
-import{ FcNext,FcPrevious }from "react-icons/fc"
+import specialist from  "../../asset/specialists.jpg"
+import { FcNext, FcPrevious } from "react-icons/fc";
 import "./style.scss";
 import us from "../../asset/US.mp4";
 import page from "../../asset/page.png";
@@ -8,56 +9,54 @@ import page1 from "../../asset/page-1.png";
 import page2 from "../../asset/page3.png";
 import TypeIt from "typeit-react";
 const Home = () => {
-  
   return (
     <div className="home">
       <div className="home-container-1">
         <video src={us} autoPlay loop muted />
         <div className="home-navbar">
-      
-<nav class="navbar navbar-expand-lg navbar-dark shadow-0 navbar-top">
- 
-  <div class="container">
-    <a class="navbar-brand me-2 logo-1" href="/">
-     NOOSH
-    </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarButtonsExample"
-      aria-controls="navbarButtonsExample"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+          <nav class="navbar navbar-expand-lg navbar-dark shadow-0 navbar-top">
+            <div class="container-fluid">
+              <a class="navbar-brand me-2 logo-1" href="/">
+                NOOSH
+              </a>
 
-  
-    <div class="collapse navbar-collapse" id="navbarButtonsExample">
-    
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-      </ul>
-    
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
 
-      <div class="d-flex align-items-center">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">HOME</a></li>
-      <li class="nav-item">
-      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">ABOUT US</a>
-      </li>
-      <li class="nav-item">
-      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">CONTACT US</a>
-      </li>
-    </ul>
-      </div>
-    </div>
-  
-  </div>
+              <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
-</nav>
+                <div class="d-flex align-items-center">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">
+                        HOME
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">
+                        ABOUT US
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">
+                        CONTACT US
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
 
           {/* <Navbar
             collapseOnSelect
@@ -98,7 +97,7 @@ const Home = () => {
               <span className="changingText">
                 {" "}
                 <TypeIt
-                  options={{ loop: true, speed: 400, Cursor: false }}
+                  options={{ loop: true, speed: 400, cursorChar: "" }}
                   getBeforeInit={(instance) => {
                     instance
                       .type("confident")
@@ -122,262 +121,418 @@ const Home = () => {
           </div>
           <div className="home-content-2">
             <p className="mb-3-1">
-              Discover and book beauty & wellness professionals near you<br></br>
+              Discover and book beauty & wellness professionals near you
+              <br></br>
               Taking care of yourself has been this easy and convenient.
             </p>
             <p className="mb-3-2">
-            <button type="button" class="btn btn-outline-primary btn-lg" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
-  BOOK YOUR APPOINTMENT
-</button></p>
-            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body">
-      <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
-  <li class="nav-item" role="presentation">
-    <a
-      class="nav-link active"
-      id="tab-login"
-      data-mdb-toggle="pill"
-      href="#pills-login"
-      role="tab"
-      aria-controls="pills-login"
-      aria-selected="true"
-      >Login</a>
-    
-  </li>
-  <li class="nav-item" role="presentation">
-    <a
-      class="nav-link"
-      id="tab-register"
-      data-mdb-toggle="pill"
-      href="#pills-register"
-      role="tab"
-      aria-controls="pills-register"
-      aria-selected="false"
-      >Register</a
-    >
-  </li>
-</ul>
-<div class="tab-content">
-  <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
-    <form>
-          <div class="form-outline mb-4">
-        <input type="email" id="loginName" class="form-control"  />
-        <label class="form-label" for="loginName" >Email or username</label>
-      </div>
+              <button
+                type="button"
+                class="btn btn-outline-info btn-lg"
+                data-mdb-toggle="modal"
+                data-mdb-target="#exampleModal"
+              >
+                BOOK YOUR APPOINTMENT
+              </button>
+            </p>
+            <div
+              class="modal fade "
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <ul
+                      class="nav nav-pills nav-justified mb-3"
+                      id="ex1"
+                      role="tablist"
+                    >
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link active"
+                          id="tab-login"
+                          data-mdb-toggle="pill"
+                          href="#pills-login"
+                          role="tab"
+                          aria-controls="pills-login"
+                          aria-selected="true"
+                        >
+                          Login
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a
+                          class="nav-link"
+                          id="tab-register"
+                          data-mdb-toggle="pill"
+                          href="#pills-register"
+                          role="tab"
+                          aria-controls="pills-register"
+                          aria-selected="false"
+                        >
+                          Register
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="tab-content">
+                      <div
+                        class="tab-pane fade show active"
+                        id="pills-login"
+                        role="tabpanel"
+                        aria-labelledby="tab-login"
+                      >
+                        <form>
+                          <div class="form-outline mb-4">
+                            <input
+                              type="email"
+                              id="loginName"
+                              class="form-control"
+                            />
+                            <label class="form-label" for="loginName">
+                              Email or username
+                            </label>
+                          </div>
 
-    
-      <div class="form-outline mb-4">
-        <input type="password" id="loginPassword" class="form-control" />
-        <label class="form-label" for="loginPassword">Password</label>
-      </div>
-      <div class="row mb-4">
-        <div class="col-md-6 d-flex justify-content-center">
-          <div class="form-check mb-3 mb-md-0">
-            <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
-            <label class="form-check-label" for="loginCheck"> Remember me </label>
+                          <div class="form-outline mb-4">
+                            <input
+                              type="password"
+                              id="loginPassword"
+                              class="form-control"
+                            />
+                            <label class="form-label" for="loginPassword">
+                              Password
+                            </label>
+                          </div>
+                          <div class="row mb-4">
+                            <div class="col-md-6 d-flex justify-content-center">
+                              <div class="form-check mb-3 mb-md-0">
+                                <input
+                                  class="form-check-input"
+                                  type="checkbox"
+                                  value=""
+                                  id="loginCheck"
+                                  checked
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="loginCheck"
+                                >
+                                  {" "}
+                                  Remember me{" "}
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6 d-flex justify-content-center">
+                              <a href="#!">Forgot password?</a>
+                            </div>
+                          </div>
+
+                          <button
+                            type="submit"
+                            class="btn btn-primary btn-block mb-4"
+                          >
+                            Sign in
+                          </button>
+                        </form>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="pills-register"
+                        role="tabpanel"
+                        aria-labelledby="tab-register"
+                      >
+                        <form>
+                          <div class="form-outline mb-4">
+                            <input
+                              type="text"
+                              id="registerName"
+                              class="form-control"
+                            />
+                            <label class="form-label" for="registerName">
+                              Name
+                            </label>
+                          </div>
+                          <div class="form-outline mb-4">
+                            <input
+                              type="text"
+                              id="registerUsername"
+                              class="form-control"
+                            />
+                            <label class="form-label" for="registerUsername">
+                              Username
+                            </label>
+                          </div>
+
+                          <div class="form-outline mb-4">
+                            <input
+                              type="email"
+                              id="registerEmail"
+                              class="form-control"
+                            />
+                            <label class="form-label" for="registerEmail">
+                              Email
+                            </label>
+                          </div>
+
+                          <div class="form-outline mb-4">
+                            <input
+                              type="password"
+                              id="registerPassword"
+                              class="form-control"
+                            />
+                            <label class="form-label" for="registerPassword">
+                              Password
+                            </label>
+                          </div>
+
+                          <div class="form-outline mb-4">
+                            <input
+                              type="password"
+                              id="registerRepeatPassword"
+                              class="form-control"
+                            />
+                            <label
+                              class="form-label"
+                              for="registerRepeatPassword"
+                            >
+                              Repeat password
+                            </label>
+                          </div>
+
+                          <div class="form-check d-flex justify-content-center mb-4">
+                            <input
+                              class="form-check-input me-2"
+                              type="checkbox"
+                              value=""
+                              id="registerCheck"
+                              aria-describedby="registerCheckHelpText"
+                            />
+                            <label class="form-check-label" for="registerCheck">
+                              I have read and agree to the terms
+                            </label>
+                          </div>
+
+                          <button
+                            type="submit"
+                            class="btn btn-primary btn-block mb-3"
+                          >
+                            Sign in
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="col-md-6 d-flex justify-content-center">
-          <a href="#!">Forgot password?</a>
-        </div>
       </div>
-
-      <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
-    
-    </form>
-  </div>
-  <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
-    <form> 
-      <div class="form-outline mb-4">
-        <input type="text" id="registerName" class="form-control" />
-        <label class="form-label" for="registerName">Name</label>
-      </div>
-      <div class="form-outline mb-4">
-        <input type="text" id="registerUsername" class="form-control" />
-        <label class="form-label" for="registerUsername">Username</label>
-      </div>
-
-
-      <div class="form-outline mb-4">
-        <input type="email" id="registerEmail" class="form-control" />
-        <label class="form-label" for="registerEmail">Email</label>
-      </div>
-
-     
-      <div class="form-outline mb-4">
-        <input type="password" id="registerPassword" class="form-control" />
-        <label class="form-label" for="registerPassword">Password</label>
-      </div>
-
-     
-      <div class="form-outline mb-4">
-        <input type="password" id="registerRepeatPassword" class="form-control" />
-        <label class="form-label" for="registerRepeatPassword">Repeat password</label>
-      </div>
-
-     
-      <div class="form-check d-flex justify-content-center mb-4">
-        <input
-          class="form-check-input me-2"
-          type="checkbox"
-          value=""
-          id="registerCheck"
-         
-          aria-describedby="registerCheckHelpText"
-        />
-        <label class="form-check-label" for="registerCheck">
-          I have read and agree to the terms
-        </label>
-      </div>
-
-     
-      <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
-    </form>
-  </div>
-</div>
-      </div>
-     
-    </div>
-  </div>
-</div>
-           
-          </div>
-        </div>
-      </div>
-
 
       <div class="top-content">
-    <div class="container-fluid">
-        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+        <center className="heading-1">OUR SPECIALIST</center>
+     
+        <div class="container-fluid">
+          <div
+            id="carousel-example"
+            class="carousel slide"
+            data-ride="carousel"
+          >
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
+              <center>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                 
-                <center><div class="card" style={{width:"18rem"}}>
-  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div></center>
-
+                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <center><div class="card" style={{width:"18rem"}}>
-  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div></center>
+                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <center><div class="card" style={{width:"18rem"}}>
-  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div></center>
+                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <center><div class="card" style={{width:"18rem"}}>
-  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div></center>
+                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <center><div class="card" style={{width:"18rem"}}>
-  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div></center>
+                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <center><div class="card" style={{width:"18rem"}}>
-  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div></center>
+                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <center><div class="card" style={{width:"18rem"}}>
-  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div></center>
+                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                <center><div class="card" style={{width:"18rem"}}>
-  <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
-  <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div></center>
+                  <div class="card" style={{ width: "22rem",height:"18rem" }}>
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </center>
             </div>
-            <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-               <FcPrevious></FcPrevious>
+            <a
+              class="carousel-control-prev"
+              href="#carousel-example"
+              role="button"
+              data-slide="prev"
+            >
+              <FcPrevious></FcPrevious>
             </a>
-            <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-            <FcNext></FcNext>
+            <a
+              class="carousel-control-next"
+              href="#carousel-example"
+              role="button"
+              data-slide="next"
+            >
+              <FcNext></FcNext>
             </a>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
 
       <div className="color-card-main">
-        <div className="card-wrapper">
-          <div className="c-c-l">
-            <div className="c-c-head">
-              <img src="" alt="" />
-              <span>Noosh App • iOS, Android</span>
-            </div>
-            <div className="c-c-head-1">
-              Find & book <b>an appointment</b>
-            </div>
-            <div className="c-c-para">
-              Cut the phone tag. Find your next appointment and{" "}
-              <b>book instantly</b> anytime, anywhere.
-            </div>
-            <div className="c-c-input">
-              
-            </div>
-            <div className="l-b-img">
-              <img
-                className="c-img-1"
-                src="	https://dk2h3gy4kn9jw.cloudfront.net/web-2019/41bea40b/img/customer-app-en.d0ba412.webp"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="c-c-r">
-            <div className="c-c-head">
-              <img src="" alt="" />
-              <span>Noosh App • iOS, Android</span>
-            </div>
-            <div className="c-c-head-1">
-              Noosh <b>for your business</b>
-            </div>
-            <div className="c-c-para">
-              Get started with Noosh to run your business,
-              <b>better</b> . Calendar, Booking, Marketing, and Payments all in
-              one.
-            </div>
-
-            <button className="r-c-btn">GROW MY BUSSINESS</button>
-            <div className="l-b-img">
-              <img
-                className="c-img-1"
-                src="		https://dk2h3gy4kn9jw.cloudfront.net/web-2019/41bea40b/img/biz-app-en.5ad249f.webp"
-                alt=""
-              />
-            </div>
-          </div>
+       <div className="heading-1">OUR SERVICES</div>
+       <div className="service-1">
+       <div class="card" style={{width:"22rem",height:"18rem"}}>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style={{width:"22rem",height:"18rem"}}>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style={{width:"22rem",height:"18rem"}}>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+       </div>
+       <div className="service-1">
+       <div class="card" style={{width:"22rem",height:"18rem"}}>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style={{width:"22rem",height:"18rem"}}>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style={{width:"22rem",height:"18rem"}}>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
         </div>
       </div>
 

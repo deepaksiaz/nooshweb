@@ -9,7 +9,7 @@ color: #ffff;
 .nav-link
 {
  color: #ffff;
-  font-size: 15px;
+  font-size: 17px;
 }
 .home-content-1
 {
@@ -50,7 +50,7 @@ color: #ffff;
 video
 {
     position:absolute;
-    filter: brightness(60%);
+    filter: brightness(50%);
     right: 0;
     bottom: 0;
     width: 100%;
@@ -341,11 +341,28 @@ flex-direction: column;
   }
 }
 
-.carousel-inner
+.btn-outline-info
 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  font-weight: 400;
 }
+.top-content
+{
+  padding: 94px  0px 94px 0PX;
+  width: 100%;
+}
+.heading-1
+{
+  padding-bottom: 35px;
+  font-size: 28px;
+  font-weight: 400;
+}
+.service-1
+{ display: flex;
+  flex-direction: row;
+flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 
 

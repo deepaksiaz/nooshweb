@@ -33,26 +33,6 @@ function Footer() {
             </Nav.Item>
           </Nav>
         </div>
-        <div className="right-side-footer">
-          <Button className="but-1">
-            <div className="applelogo">
-                <AiOutlineApple style={{width:"30px",height:"30px"}}/>
-                <div className="logo-heading">
-              <div style={{fontSize:"10px"}}>Download</div>
-              <div>AppStore</div>
-              </div>
-            </div>
-          </Button>
-          <Button className="but-2">
-            <div className="applelogo">
-                <FaGooglePlay style={{width:"25px",height:"25px"}}/>
-                <div className="logo-heading">
-              <div style={{fontSize:"10px"}}>Download</div>
-              <div>Google Play</div>
-              </div>
-            </div>
-          </Button>
-        </div>
       </div>
       <hr className="horizontal-line"/>
       <div className="footer-middel">
