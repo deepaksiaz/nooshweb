@@ -89,17 +89,6 @@ video
     {
       padding-top: 15px;
     }
-    @media screen and (max-width:786px) {
-      .home-content-2
-      {
-      width: auto;
-      }
-      nav
-      {
-        padding: 15px;
-      }
-
-    }
 
  .home-content-3
  {
@@ -138,12 +127,6 @@ video
   flex-direction: row;
   flex-flow: wrap;
  }
-
-
-@media screen and (max-width:786px) {
-
-  
-}
 
 .card-one{
   display: flex;
@@ -362,12 +345,23 @@ flex-flow: wrap;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width:786) {
-  .card-specialist
+@media screen and (max-width:600px) {
+ .wrapper
+ {
+  padding-top: 100px;
+ }
+  .mb-3-1
   {
-    width: auto;
+
+    font-size: 18px;
   }
-  
 }
 
 
+@media screen and (max-width: 600px) {
+  .button1,
+  .button2 {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+}
