@@ -128,7 +128,7 @@ const Home = () => {
             <p className="mb-3-2">
               <button
                 type="button"
-                class="btn btn-outline-info btn-lg"
+                class="btn btn-primary btn-md"
                 data-mdb-toggle="modal"
                 data-mdb-target="#exampleModal"
               >

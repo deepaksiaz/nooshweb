@@ -50,7 +50,7 @@ color: #ffff;
 video
 {
     position:absolute;
-   
+  filter: brightness(65%);
     right: 0;
     bottom: 0;
     width: 100%;
@@ -80,9 +80,9 @@ video
       width:100% ;
       color: #eceef3;
       justify-content: space-between;
-      font-size: 18px;
+      font-size: 24px;
       padding: 0px;
-      font-weight: 0;
+      font-weight: 100;
       text-align: center;
     }
     .mb-3-2
