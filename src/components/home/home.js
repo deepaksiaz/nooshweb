@@ -341,9 +341,9 @@ const Home = () => {
             id="carousel-example"
             class="carousel slide"
             data-ride="carousel"
-          >
+          > <center>
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
-              <center>
+             
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
                   <div class="card" style={{ width: "22rem",height:"30rem" }}>
                     <img
@@ -472,8 +472,9 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              </center>
+              
             </div>
+            </center>
             <a
               class="carousel-control-prev"
               href="#carousel-example"
