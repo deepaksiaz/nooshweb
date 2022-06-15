@@ -345,7 +345,7 @@ const Home = () => {
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
              
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                  <div class="card" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -361,7 +361,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                  <div class="card" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -377,7 +377,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                  <div class="card" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -393,7 +393,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                  <div class="card" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -409,7 +409,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                  <div class="card" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -425,7 +425,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                  <div class="card" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -441,7 +441,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                  <div class="card" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -457,7 +457,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" style={{ width: "22rem",height:"30rem" }}>
+                  <div class="card" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -481,7 +481,7 @@ const Home = () => {
               role="button"
               data-slide="prev"
             >
-              <FcPrevious></FcPrevious>
+              <FcPrevious style={{fontSize:"50px",fontWeight:"500"}}></FcPrevious>
             </a>
             <a
               class="carousel-control-next"
@@ -489,7 +489,7 @@ const Home = () => {
               role="button"
               data-slide="next"
             >
-              <FcNext></FcNext>
+              <FcNext style={{fontSize:"35px",fontWeight:"500",color:"red"}}></FcNext>
             </a>
           </div>
         </div>
