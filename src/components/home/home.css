@@ -92,7 +92,9 @@ video
       justify-content: space-between;
       font-size: 22px;
       padding: 0px;
-      font-weight: 100;
+      font-weight: 200;
+    
+     
       text-align: center;
     }
     .mb-3-2
@@ -340,7 +342,12 @@ flex-direction: column;
 }
 .top-content
 {
-  padding: 94px  0px 94px 0px;
+  background-color: #f6f9f9;
+  padding: 40px 0px 94px 0px;
+}
+.color-card-main
+{
+  padding: 40px 0px 94px 0px;
 }
 .heading-1
 {
@@ -370,6 +377,12 @@ flex-flow: wrap;
 {
   width: 22rem;
   margin: 5px;
+}
+.card-service:hover {
+  background-color: #eceef9;
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 24px 36px 24px 36px transparent,
+    0 0px 0px;
 }
 
 @media screen and (max-width: 600px) {
