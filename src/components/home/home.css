@@ -369,6 +369,7 @@ flex-flow: wrap;
 .card-service
 {
   width: 22rem;
+  margin: 5px;
 }
 
 @media screen and (max-width: 600px) {

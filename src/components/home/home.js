@@ -524,14 +524,14 @@ Our makeup experts will have you looking your best in less than 30 minutes.</p>
   
   </div>
 </div>
-<div className="card card-service" >
+<div className="card card-service" style={{height:"267px"}}>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-<div className="card card-service" >
+<div className="card card-service" style={{height:"267px"}}>
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
