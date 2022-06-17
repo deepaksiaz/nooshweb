@@ -9,7 +9,7 @@ color: #ffff;
 .nav-link
 {
  color: #ffff;
-  font-size: 17px;
+ font-size: 18px;
 }
 .home-content-1
 {
@@ -47,6 +47,16 @@ color: #ffff;
   color:#ffff;
   font-size: 34px;
 }
+
+.logo-2
+{
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: 'Vollkorn', serif;
+  color:#ffff;
+  font-size: 18px;
+}
+
 video
 {
     position:absolute;
@@ -80,7 +90,7 @@ video
       width:100% ;
       color: #eceef3;
       justify-content: space-between;
-      font-size: 24px;
+      font-size: 22px;
       padding: 0px;
       font-weight: 100;
       text-align: center;
@@ -356,7 +366,10 @@ flex-flow: wrap;
     font-size: 18px;
   }
 }
-
+.card-service
+{
+  width: 22rem;
+}
 
 @media screen and (max-width: 600px) {
   .button1,
@@ -364,4 +377,22 @@ flex-flow: wrap;
     width: 80%;
     margin-bottom: 1rem;
   }
+  .card-service
+{
+  width: auto;
+
+}
+
+}
+
+
+
+.card-body
+{
+  display: flex;
+  flex-direction:column;
+text-align: center;
+  align-items: center;
+  justify-content: center;
+
 }

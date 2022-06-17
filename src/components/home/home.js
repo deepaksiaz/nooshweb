@@ -1,14 +1,19 @@
 import React from "react";
 import "./home.css";
 import specialist from  "../../asset/specialists.jpg"
+import makeup from "../../asset/makeup.webp"
+import manicure from "../../asset/manicure.png"
+import skincare from '../../asset/skincare.png'
 import { FcNext, FcPrevious } from "react-icons/fc";
 import "./style.scss";
 import us from "../../asset/US.mp4";
 import page from "../../asset/page.png";
 import page1 from "../../asset/page-1.png";
 import page2 from "../../asset/page3.png";
+import haircut from "../../asset/haircut.png"
 import TypeIt from "typeit-react";
 const Home = () => {
+  
   return (
     <div className="home">
       <div className="home-container-1">
@@ -38,17 +43,17 @@ const Home = () => {
                 <div class="d-flex align-items-center">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">
+                      <a class="navbar-brand me-2 logo-2" href="/">
                         HOME
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">
+                      <a class="navbar-brand me-2 logo-2" href="/">
                         ABOUT US
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="navbar-brand mt-2 mt-md-0 nav-link" href="/">
+                      <a class="navbar-brand me-2 logo-2" href="/">
                         CONTACT US
                       </a>
                     </li>
@@ -185,26 +190,24 @@ const Home = () => {
                         aria-labelledby="tab-login"
                       >
                         <form>
-                          <div class="form-outline mb-4">
+                          <div class="form mb-4">
                             <input
                               type="email"
                               id="loginName"
                               class="form-control"
+                              placeholder="Email or username"
                             />
-                            <label class="form-label" for="loginName">
-                              Email or username
-                            </label>
+                           
                           </div>
 
-                          <div class="form-outline mb-4">
+                          <div class="form mb-4">
                             <input
                               type="password"
                               id="loginPassword"
                               class="form-control"
+                              placeholder=" Password"
                             />
-                            <label class="form-label" for="loginPassword">
-                              Password
-                            </label>
+                            
                           </div>
                           <div class="row mb-4">
                             <div class="col-md-6 d-flex justify-content-center">
@@ -246,75 +249,63 @@ const Home = () => {
                         aria-labelledby="tab-register"
                       >
                         <form>
-                          <div class="form-outline mb-4">
+                          <div class="form mb-4">
                             <input
                               type="text"
                               id="registerName"
                               class="form-control"
+                              placeholder="Name"
                             />
-                            <label class="form-label" for="registerName">
+                            {/* <label class="form-label" for="registerName">
                               Name
-                            </label>
-                          </div>
-                          <div class="form-outline mb-4">
-                            <input
-                              type="text"
-                              id="registerUsername"
-                              class="form-control"
-                            />
-                            <label class="form-label" for="registerUsername">
-                              Username
-                            </label>
+                            </label> */}
                           </div>
 
-                          <div class="form-outline mb-4">
+                          <div class="form mb-4">
                             <input
                               type="email"
                               id="registerEmail"
                               class="form-control"
+                              placeholder="Email"
                             />
-                            <label class="form-label" for="registerEmail">
+                            {/* <label class="form-label" for="registerEmail">
                               Email
-                            </label>
+                            </label> */}
                           </div>
 
-                          <div class="form-outline mb-4">
+                          <div class="form mb-4">
                             <input
                               type="password"
                               id="registerPassword"
                               class="form-control"
+                              placeholder="Password"
                             />
-                            <label class="form-label" for="registerPassword">
+                            {/* <label class="form-label" for="registerPassword">
                               Password
-                            </label>
+                            </label> */}
                           </div>
 
-                          <div class="form-outline mb-4">
+                          <div class="form mb-4">
                             <input
                               type="password"
                               id="registerRepeatPassword"
                               class="form-control"
+                              placeHolder="Confirm Password"
                             />
-                            <label
+                            {/* <label
                               class="form-label"
                               for="registerRepeatPassword"
                             >
                               Repeat password
-                            </label>
+                            </label> */}
                           </div>
 
-                          <div class="form-check d-flex justify-content-center mb-4">
-                            <input
-                              class="form-check-input me-2"
-                              type="checkbox"
-                              value=""
-                              id="registerCheck"
-                              aria-describedby="registerCheckHelpText"
-                            />
-                            <label class="form-check-label" for="registerCheck">
-                              I have read and agree to the terms
-                            </label>
-                          </div>
+                          <div class="form-check d-flex justify-content mb-4">
+    <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" unchecked />
+    <label class="form-check-label" for="form5Example3">
+      I have read and agree to the terms
+    </label>
+  </div>
 
                           <button
                             type="submit"
@@ -345,7 +336,7 @@ const Home = () => {
             <div class="carousel-inner row w-100 mx-auto" role="listbox">
              
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                  <div class="card" >
+                  <div className="card card-service" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -361,7 +352,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" >
+                  <div className="card card-service" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -377,7 +368,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" >
+                  <div className="card card-service" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -393,7 +384,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" >
+                  <div className="card card-service" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -409,7 +400,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" >
+                  <div className="card card-service" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -425,7 +416,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" >
+                  <div className="card card-service" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -441,7 +432,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" >
+                  <div className="card card-service" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -457,7 +448,7 @@ const Home = () => {
                   </div>
                 </div>
                     <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div class="card" >
+                  <div className="card card-service" >
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -481,7 +472,7 @@ const Home = () => {
               role="button"
               data-slide="prev"
             >
-              <FcPrevious style={{fontSize:"50px",fontWeight:"500"}}></FcPrevious>
+              <FcPrevious style={{fontSize:"40px",fontWeight:"500"}}></FcPrevious>
             </a>
             <a
               class="carousel-control-next"
@@ -489,7 +480,7 @@ const Home = () => {
               role="button"
               data-slide="next"
             >
-              <FcNext style={{fontSize:"35px",fontWeight:"500",color:"red"}}></FcNext>
+              <FcNext style={{fontSize:"40px",fontWeight:"500"}}></FcNext>
             </a>
           </div>
         </div>
@@ -498,44 +489,49 @@ const Home = () => {
       <div className="color-card-main">
        <div className="heading-1">OUR SERVICES</div>
        <div className="service-1">
-       <div class="card" style={{width:"22rem"}}>
+       <div className="card card-service" >
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+   <center> <img src={haircut} alt="" style={{width:"180px",paddingBottom:"20px"}}></img></center>
+   <h5 class="card-title">Haircut & Styling</h5>
+    <p class="card-text">Improve your look with our professional haircut & hairstyling services.</p>
+  
   </div>
 </div>
-<div class="card" style={{width:"22rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<div className="card card-service" >
+<div class="card-body">
+   <center> <img src={makeup} alt="" style={{width:"100px",paddingBottom:"20px"}}></img></center>
+   <h5 class="card-title">Makeup</h5>
+    <p class="card-text">Makeup
+Our makeup experts will have you looking your best in less than 30 minutes.</p>
+  
   </div>
 </div>
-<div class="card" style={{width:"22rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<div className="card card-service" >
+<div class="card-body">
+   <center> <img src={skincare} alt="" style={{width:"98px",paddingBottom:"20px"}}></img></center>
+   <h5 class="card-title">Skincare</h5>
+    <p class="card-text">We offer a full range of relaxing skin care services, including all types of facials.</p>
+  
   </div>
 </div>
        </div>
        <div className="service-1">
-       <div class="card" style={{width:"22rem"}}>
+       <div className="card card-service" >
+       <div class="card-body">
+   <center> <img src={manicure} alt="" style={{width:"98px",paddingBottom:"20px"}}></img></center>
+   <h5 class="card-title">Manicure & Pedicure</h5>
+    <p class="card-text">Pamper yourself with our manicure & pedicure services that will bring sensational results.</p>
+  
+  </div>
+</div>
+<div className="card card-service" >
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-<div class="card" style={{width:"22rem"}}>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div class="card" style={{width:"22rem"}}>
+<div className="card card-service" >
   <div class="card-body">
     <h5 class="card-title">Special title treatment</h5>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
