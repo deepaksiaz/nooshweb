@@ -582,9 +582,6 @@ Our makeup experts will have you looking your best in less than 30 minutes.</p>
             </div>
           </div>
         </div>
-        <div className="block-1">
-          
-        </div>
       </div>
     </div>
   );
