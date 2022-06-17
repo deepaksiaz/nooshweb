@@ -4,6 +4,8 @@ import specialist from  "../../asset/specialists.jpg"
 import makeup from "../../asset/makeup.webp"
 import manicure from "../../asset/manicure.png"
 import skincare from '../../asset/skincare.png'
+import gallery1 from '../../asset/gallery-1.jpg'
+import gallery2 from '../../asset/gallery-2.jpg'
 import { FcNext, FcPrevious } from "react-icons/fc";
 import "./style.scss";
 import us from "../../asset/US.mp4";
@@ -560,18 +562,18 @@ Our makeup experts will have you looking your best in less than 30 minutes.</p>
             </div>
           </div>
           <div className="r-b-1">
-            <img className="b-imges"  alt="" />{" "}
+            <img className="b-imges" src={gallery1} alt="" />{" "}
           </div>
         </div>
         <div className="block-1">
           <div className="l-b-2">
-            <img  alt="" className="b-imges" />
+            <img src={gallery2} alt="" className="b-imges" />
           </div>
           <div className="r-b-2">
-            <div className="l-b-1-heading">
+            <div className="l-b-2-heading">
               Something come up? We’ve got you.
             </div>
-            <div className="l-b-1-paragraph">
+            <div className="l-b-2-paragraph">
               Download Noosh, a free online appointment booking app, and manage
               your appointments from anywhere. Reschedule or cancel without
               picking up the phone.<br></br>
