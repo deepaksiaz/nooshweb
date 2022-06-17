@@ -7,9 +7,6 @@ import skincare from '../../asset/skincare.png'
 import { FcNext, FcPrevious } from "react-icons/fc";
 import "./style.scss";
 import us from "../../asset/US.mp4";
-import page from "../../asset/page.png";
-import page1 from "../../asset/page-1.png";
-import page2 from "../../asset/page3.png";
 import haircut from "../../asset/haircut.png"
 import TypeIt from "typeit-react";
 const Home = () => {
@@ -325,7 +322,7 @@ const Home = () => {
       </div>
 
       <div class="top-content">
-        <center className="heading-1">OUR SPECIALIST</center>
+        <div className="heading-1">OUR SPECIALIST<div style={{width:"100%",backgroundColor:"green",marginTop:"-15px"}}><hr/></div></div>
      
         <div class="container-fluid">
           <div
@@ -487,7 +484,8 @@ const Home = () => {
       </div>
 
       <div className="color-card-main">
-       <div className="heading-1">OUR SERVICES</div>
+       <div className="heading-1">OUR SERVICES<div style={{width:"100%",backgroundColor:"green",marginTop:"-15px"}}><hr/></div></div>
+       
        <div className="service-1">
        <div className="card card-service" >
   <div class="card-body">
@@ -562,12 +560,12 @@ Our makeup experts will have you looking your best in less than 30 minutes.</p>
             </div>
           </div>
           <div className="r-b-1">
-            <img className="b-imges" src={page} alt="" />{" "}
+            <img className="b-imges"  alt="" />{" "}
           </div>
         </div>
         <div className="block-1">
           <div className="l-b-2">
-            <img src={page1} alt="" className="b-imges" />
+            <img  alt="" className="b-imges" />
           </div>
           <div className="r-b-2">
             <div className="l-b-1-heading">
@@ -583,23 +581,7 @@ Our makeup experts will have you looking your best in less than 30 minutes.</p>
           </div>
         </div>
         <div className="block-1">
-          <div className="l-b-1">
-            <div className="l-b-1-heading">Book with the best, near you</div>
-            <div className="l-b-1-paragraph">
-              Take a scroll around the block to see top health and beauty
-              businesses on Noosh’s marketplace.
-              <br></br>
-              Check out their vibe from their business profile and hear what
-              other people are saying with verified reviews. You can even look
-              through their portfolio of work.
-              <br></br>
-              Save time and leave the stress to someone else. With Noosh,
-              setting up your next beauty appointment is free and easy.
-            </div>
-          </div>
-          <div className="r-b-1">
-            <img className="b-imges" src={page2} alt="" />{" "}
-          </div>
+          
         </div>
       </div>
     </div>
