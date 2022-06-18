@@ -52,7 +52,7 @@ const Home = () => {
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="navbar-brand me-2 logo-2" href="/">
+                      <a class="navbar-brand me-2 logo-2" href="/contactus">
                         CONTACT US
                       </a>
                     </li>

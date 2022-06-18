@@ -14,6 +14,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.4.0",
+    "react-router-dom": "^5.3.3",
     "react-scripts": "5.0.1",
     "script-tag": "^0.0.0",
     "typeit-react": "^2.5.0",
