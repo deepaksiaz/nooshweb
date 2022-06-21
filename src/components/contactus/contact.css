@@ -151,10 +151,14 @@ padding: 20px;
 }
 @media screen and (max-width: 768px) {
   .box-1-1,
-  .box-1-2,
-  .sends,
   .co-location {
-    width: 99%;
+    width: 100%;
+    padding: 20px;
+    justify-content: center;
+  }
+  .box-1-2{
+    width: 100%;
+    margin-top: 20px;
     padding: 20px;
     justify-content: center;
   }
