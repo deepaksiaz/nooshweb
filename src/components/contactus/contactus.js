@@ -4,6 +4,7 @@ import mail from "../../asset/mail.png"
 import call from "../../asset/call.png"
 import address from "../../asset/location1.png"
 import "./contact.css";
+import Navigation from "../navigation/navigation";
 const ContactUs = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -25,6 +26,7 @@ const ContactUs = () => {
   }
   return (
     <>
+ <Navigation/>
       <div className="co-container-1">
         <div className="box-1-1">
           <center><div className="box-1-h">Contact Us</div></center>

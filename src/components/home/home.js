@@ -1,18 +1,24 @@
-import React from "react";
+import React,{Component} from "react";
 import "./home.css";
-import specialist from  "../../asset/specialists.jpg"
-import makeup from "../../asset/makeup.webp"
-import manicure from "../../asset/manicure.png"
-import skincare from '../../asset/skincare.png'
-import gallery1 from '../../asset/gallery-1.jpg'
-import gallery2 from '../../asset/gallery-2.jpg'
+import specialist from "../../asset/specialists.jpg";
+import makeup from "../../asset/makeup.webp";
+import manicure from "../../asset/manicure.png";
+import skincare from "../../asset/skincare.png";
+import gallery1 from "../../asset/gallery-1.jpg";
+import gallery2 from "../../asset/gallery-2.jpg";
 import { FcNext, FcPrevious } from "react-icons/fc";
 import "./style.scss";
 import us from "../../asset/US.mp4";
-import haircut from "../../asset/haircut.png"
+import haircut from "../../asset/haircut.png";
 import TypeIt from "typeit-react";
-const Home = () => {
+import $ from 'jquery'
+class Home extends Component {
   
+  componentDidMount()
+  {
+  
+  }
+ render (){
   return (
     <div className="home">
       <div className="home-container-1">
@@ -61,35 +67,6 @@ const Home = () => {
               </div>
             </div>
           </nav>
-
-          {/* <Navbar
-            collapseOnSelect
-            expand="lg"
-            bg="transparent"
-            variant="dark"
-            className="navbar-top"
-          >
-            <Container>
-              <Navbar.Brand href="#home" className="logo-1">
-                NOOSH
-              </Navbar.Brand>
-              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-              <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="me-auto"></Nav>
-                <Nav>
-                  <Nav.Link href="/" className="nav-link">
-                    Home
-                  </Nav.Link>
-                  <Nav.Link href="/" className="nav-link">
-                    About Us
-                  </Nav.Link>
-                  <Nav.Link href="/" className="nav-link">
-                    Contact Us
-                  </Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-            </Container>
-          </Navbar> */}
         </div>
         <div className="home-content-1">
           <br></br>
@@ -149,172 +126,48 @@ const Home = () => {
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-body">
-                    <ul
-                      class="nav nav-pills nav-justified mb-3"
-                      id="ex1"
-                      role="tablist"
-                    >
-                      <li class="nav-item" role="presentation">
-                        <a
-                          class="nav-link active"
-                          id="tab-login"
-                          data-mdb-toggle="pill"
-                          href="#pills-login"
-                          role="tab"
-                          aria-controls="pills-login"
-                          aria-selected="true"
-                        >
-                          Login
-                        </a>
-                      </li>
-                      <li class="nav-item" role="presentation">
-                        <a
-                          class="nav-link"
-                          id="tab-register"
-                          data-mdb-toggle="pill"
-                          href="#pills-register"
-                          role="tab"
-                          aria-controls="pills-register"
-                          aria-selected="false"
-                        >
-                          Register
-                        </a>
-                      </li>
-                    </ul>
-                    <div class="tab-content">
-                      <div
-                        class="tab-pane fade show active"
-                        id="pills-login"
-                        role="tabpanel"
-                        aria-labelledby="tab-login"
-                      >
-                        <form>
-                          <div class="form mb-4">
-                            <input
-                              type="email"
-                              id="loginName"
-                              class="form-control"
-                              placeholder="Email or username"
-                            />
-                           
-                          </div>
-
-                          <div class="form mb-4">
-                            <input
-                              type="password"
-                              id="loginPassword"
-                              class="form-control"
-                              placeholder=" Password"
-                            />
-                            
-                          </div>
-                          <div class="row mb-4">
-                            <div class="col-md-6 d-flex justify-content-center">
-                              <div class="form-check mb-3 mb-md-0">
-                                <input
-                                  class="form-check-input"
-                                  type="checkbox"
-                                  value=""
-                                  id="loginCheck"
-                                  checked
-                                />
-                                <label
-                                  class="form-check-label"
-                                  for="loginCheck"
-                                >
-                                  {" "}
-                                  Remember me{" "}
-                                </label>
-                              </div>
-                            </div>
-
-                            <div class="col-md-6 d-flex justify-content-center">
-                              <a href="#!">Forgot password?</a>
-                            </div>
-                          </div>
-
-                          <button
-                            type="submit"
-                            class="btn btn-primary btn-block mb-4"
-                          >
-                            Sign in
-                          </button>
-                        </form>
-                      </div>
-                      <div
-                        class="tab-pane fade"
-                        id="pills-register"
-                        role="tabpanel"
-                        aria-labelledby="tab-register"
-                      >
-                        <form>
-                          <div class="form mb-4">
+                    <form>
+                      <div class="row mb-4">
+                        <div class="col">
+                          <div class="form">
                             <input
                               type="text"
-                              id="registerName"
+                              id="form3Example1"
                               class="form-control"
-                              placeholder="Name"
+                              placeholder="First Name"
                             />
-                            {/* <label class="form-label" for="registerName">
-                              Name
-                            </label> */}
                           </div>
-
-                          <div class="form mb-4">
+                        </div>
+                        <div class="col">
+                          <div class="form">
                             <input
-                              type="email"
-                              id="registerEmail"
+                              type="text"
+                              id="form3Example2"
                               class="form-control"
-                              placeholder="Email"
+                              placeholder="Last Name"
                             />
-                            {/* <label class="form-label" for="registerEmail">
-                              Email
-                            </label> */}
                           </div>
-
-                          <div class="form mb-4">
-                            <input
-                              type="password"
-                              id="registerPassword"
-                              class="form-control"
-                              placeholder="Password"
-                            />
-                            {/* <label class="form-label" for="registerPassword">
-                              Password
-                            </label> */}
-                          </div>
-
-                          <div class="form mb-4">
-                            <input
-                              type="password"
-                              id="registerRepeatPassword"
-                              class="form-control"
-                              placeHolder="Confirm Password"
-                            />
-                            {/* <label
-                              class="form-label"
-                              for="registerRepeatPassword"
-                            >
-                              Repeat password
-                            </label> */}
-                          </div>
-
-                          <div class="form-check d-flex justify-content mb-4">
-    <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" unchecked />
-    <label class="form-check-label" for="form5Example3">
-      I have read and agree to the terms
-    </label>
-  </div>
-
-                          <button
-                            type="submit"
-                            class="btn btn-primary btn-block mb-3"
-                          >
-                            Sign in
-                          </button>
-                        </form>
+                        </div>
                       </div>
-                    </div>
+
+                      <div class="form mb-4">
+                        <input
+                          type="email"
+                          id="form3Example3"
+                          class="form-control"
+                          placeholder="Email ID"
+                        />
+                      </div>
+                      <div class="form mb-4">
+                     
+                      </div>
+                      <button
+                        type="submit"
+                        class="btn btn-primary btn-block mb-4"
+                      >
+                        Sign up
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -324,98 +177,30 @@ const Home = () => {
       </div>
 
       <div class="top-content">
-        <div className="heading-1">OUR SPECIALIST<div style={{width:"100%",backgroundColor:"green",marginTop:"-15px"}}><hr/></div></div>
-     
+        <div className="heading-1">
+          OUR SPECIALIST
+          <div
+            style={{
+              width: "100%",
+              backgroundColor: "green",
+              marginTop: "-15px",
+            }}
+          >
+            <hr />
+          </div>
+        </div>
+
         <div class="container-fluid">
           <div
             id="carousel-example"
             class="carousel slide"
             data-ride="carousel"
-          > <center>
-            <div class="carousel-inner row w-100 mx-auto" role="listbox">
-             
+          >
+            {" "}
+            <center>
+              <div class="carousel-inner row w-100 mx-auto" role="listbox">
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 active">
-                  <div className="card card-service" >
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                      style={{ height: "18rem" }}
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div className="card card-service" >
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                      style={{ height: "18rem" }}
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div className="card card-service" >
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                      style={{ height: "18rem" }}
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div className="card card-service" >
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                      style={{ height: "18rem" }}
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div className="card card-service" >
-                    <img
-                      src={specialist}
-                      class="card-img-top"
-                      alt="Sunset Over the Sea"
-                      style={{ height: "18rem" }}
-                    />
-                    <div class="card-body">
-                      <p class="card-text">
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div className="card card-service" >
+                  <div className="card card-service">
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -431,7 +216,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div className="card card-service" >
+                  <div className="card card-service">
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -446,8 +231,8 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                    <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
-                  <div className="card card-service" >
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div className="card card-service">
                     <img
                       src={specialist}
                       class="card-img-top"
@@ -462,8 +247,87 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-              
-            </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div className="card card-service">
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div className="card card-service">
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div className="card card-service">
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div className="card card-service">
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3">
+                  <div className="card card-service">
+                    <img
+                      src={specialist}
+                      class="card-img-top"
+                      alt="Sunset Over the Sea"
+                      style={{ height: "18rem" }}
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </center>
             <a
               class="carousel-control-prev"
@@ -471,7 +335,9 @@ const Home = () => {
               role="button"
               data-slide="prev"
             >
-              <FcPrevious style={{fontSize:"40px",fontWeight:"500"}}></FcPrevious>
+              <FcPrevious
+                style={{ fontSize: "40px", fontWeight: "500" }}
+              ></FcPrevious>
             </a>
             <a
               class="carousel-control-next"
@@ -479,65 +345,121 @@ const Home = () => {
               role="button"
               data-slide="next"
             >
-              <FcNext style={{fontSize:"40px",fontWeight:"500"}}></FcNext>
+              <FcNext style={{ fontSize: "40px", fontWeight: "500" }}></FcNext>
             </a>
           </div>
         </div>
       </div>
 
       <div className="color-card-main">
-       <div className="heading-1">OUR SERVICES<div style={{width:"100%",backgroundColor:"green",marginTop:"-15px"}}><hr/></div></div>
-       
-       <div className="service-1">
-       <div className="card card-service" >
-  <div class="card-body">
-   <center> <img src={haircut} alt="" style={{width:"180px",paddingBottom:"20px"}}></img></center>
-   <h5 class="card-title">Haircut & Styling</h5>
-    <p class="card-text">Improve your look with our professional haircut & hairstyling services.</p>
-  
-  </div>
-</div>
-<div className="card card-service" >
-<div class="card-body">
-   <center> <img src={makeup} alt="" style={{width:"100px",paddingBottom:"20px"}}></img></center>
-   <h5 class="card-title">Makeup</h5>
-    <p class="card-text">Makeup
-Our makeup experts will have you looking your best in less than 30 minutes.</p>
-  
-  </div>
-</div>
-<div className="card card-service" >
-<div class="card-body">
-   <center> <img src={skincare} alt="" style={{width:"98px",paddingBottom:"20px"}}></img></center>
-   <h5 class="card-title">Skincare</h5>
-    <p class="card-text">We offer a full range of relaxing skin care services, including all types of facials.</p>
-  
-  </div>
-</div>
-       </div>
-       <div className="service-1">
-       <div className="card card-service" >
-       <div class="card-body">
-   <center> <img src={manicure} alt="" style={{width:"98px",paddingBottom:"20px"}}></img></center>
-   <h5 class="card-title">Manicure & Pedicure</h5>
-    <p class="card-text">Pamper yourself with our manicure & pedicure services that will bring sensational results.</p>
-  
-  </div>
-</div>
-<div className="card card-service" style={{height:"267px"}}>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<div className="card card-service" style={{height:"267px"}}>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+        <div className="heading-1">
+          OUR SERVICES
+          <div
+            style={{
+              width: "100%",
+              backgroundColor: "green",
+              marginTop: "-15px",
+            }}
+          >
+            <hr />
+          </div>
+        </div>
+
+        <div className="service-1">
+          <div className="card card-service">
+            <div class="card-body">
+              <center>
+                {" "}
+                <img
+                  src={haircut}
+                  alt=""
+                  style={{ width: "180px", paddingBottom: "20px" }}
+                ></img>
+              </center>
+              <h5 class="card-title">Haircut & Styling</h5>
+              <p class="card-text">
+                Improve your look with our professional haircut & hairstyling
+                services.
+              </p>
+            </div>
+          </div>
+          <div className="card card-service">
+            <div class="card-body">
+              <center>
+                {" "}
+                <img
+                  src={makeup}
+                  alt=""
+                  style={{ width: "100px", paddingBottom: "20px" }}
+                ></img>
+              </center>
+              <h5 class="card-title">Makeup</h5>
+              <p class="card-text">
+                Makeup Our makeup experts will have you looking your best in
+                less than 30 minutes.
+              </p>
+            </div>
+          </div>
+          <div className="card card-service">
+            <div class="card-body">
+              <center>
+                {" "}
+                <img
+                  src={skincare}
+                  alt=""
+                  style={{ width: "98px", paddingBottom: "20px" }}
+                ></img>
+              </center>
+              <h5 class="card-title">Skincare</h5>
+              <p class="card-text">
+                We offer a full range of relaxing skin care services, including
+                all types of facials.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="service-1">
+          <div className="card card-service">
+            <div class="card-body">
+              <center>
+                {" "}
+                <img
+                  src={manicure}
+                  alt=""
+                  style={{ width: "125px", paddingBottom: "20px" }}
+                ></img>
+              </center>
+              <h5 class="card-title">Manicure & Pedicure</h5>
+              <p class="card-text">
+                Pamper yourself with our manicure & pedicure services that will
+                bring sensational results.
+              </p>
+            </div>
+          </div>
+          <div className="card card-service" style={{ height: "267px" }}>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
+          <div className="card card-service" style={{ height: "267px" }}>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">
+                Go somewhere
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -586,5 +508,7 @@ Our makeup experts will have you looking your best in less than 30 minutes.</p>
     </div>
   );
 };
+};
+
 
 export default Home;
