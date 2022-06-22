@@ -1,5 +1,6 @@
 import React,{Component} from "react";
 import "./home.css";
+import { DatePicker, Radio, Space } from 'antd';
 import specialist from "../../asset/specialists.jpg";
 import makeup from "../../asset/makeup.webp";
 import manicure from "../../asset/manicure.png";
@@ -7,18 +8,32 @@ import skincare from "../../asset/skincare.png";
 import gallery1 from "../../asset/gallery-1.jpg";
 import gallery2 from "../../asset/gallery-2.jpg";
 import { FcNext, FcPrevious } from "react-icons/fc";
+import { useState } from "react";
+import AppointmentService from "../../Service/book.service"
 import "./style.scss";
 import us from "../../asset/US.mp4";
 import haircut from "../../asset/haircut.png";
 import TypeIt from "typeit-react";
-import $ from 'jquery'
-class Home extends Component {
-  
-  componentDidMount()
-  {
-  
-  }
- render (){
+
+
+
+const Home = (props) => {
+  const [name, setName] = useState("");
+  const [email_id, setemail_id] = useState("");
+  const [appoint_date, setappoint_date] = useState();
+  const onSave = async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log("BookForm onSave...");
+    const data = await AppointmentService.saveAppointment({ 
+        name: name,
+        email_id: email_id,
+        appoint_date:appoint_date
+    });
+}
+
+
+
   return (
     <div className="home">
       <div className="home-container-1">
@@ -135,6 +150,8 @@ class Home extends Component {
                               id="form3Example1"
                               class="form-control"
                               placeholder="First Name"
+                              value={name} 
+                              onChange={(e) => setName(e.target.value)}
                             />
                           </div>
                         </div>
@@ -156,14 +173,23 @@ class Home extends Component {
                           id="form3Example3"
                           class="form-control"
                           placeholder="Email ID"
+                          value={email_id} 
+                          onChange={(e) => setemail_id(e.target.value)}
                         />
                       </div>
                       <div class="form mb-4">
-                     
+                      <Space direction="vertical" size={20}>
+      <DatePicker size="large" 
+      format={"DD-MM-YYYY"}
+   selected={appoint_date} 
+   onChange={e => setappoint_date(e)}  />
+      
+    </Space>
                       </div>
                       <button
                         type="submit"
                         class="btn btn-primary btn-block mb-4"
+                        onClick={onSave}
                       >
                         Sign up
                       </button>
@@ -508,7 +534,7 @@ class Home extends Component {
     </div>
   );
 };
-};
+
 
 
 export default Home;
