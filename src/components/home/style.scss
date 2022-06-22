@@ -17,14 +17,14 @@
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
   padding: 25px;
 }
 .l-b-1{
-  width: 625px;
+  width:750px;
   padding: 32px;
   flex-direction: column;
   justify-content: center;
@@ -58,17 +58,17 @@
   align-items: center;
 }
 .l-b-2{
-  width: 625px;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .r-b-2{
-  width: 625px;
+  width: 750px;
+  padding: 32px;
   flex-direction: column;
   justify-content: center;
-  padding: 32px;
 }
 .b-imges{
   width: 500px;
@@ -142,17 +142,14 @@
     align-items: center;
     width: auto;
     height: auto;
-    padding: 0px;
   }
   .r-b-2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
-    width: 95%;
+    width: 100%;
     height: auto;
-    padding: 0px;
   }
   .b-imges{
     width:95% ;
