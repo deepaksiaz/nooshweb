@@ -1,6 +1,6 @@
-import React,{Component} from "react";
+import React from "react";
 import "./home.css";
-import { DatePicker, Radio, Space } from 'antd';
+import { DatePicker, Space } from "antd";
 import specialist from "../../asset/specialists.jpg";
 import makeup from "../../asset/makeup.webp";
 import manicure from "../../asset/manicure.png";
@@ -9,30 +9,26 @@ import gallery1 from "../../asset/gallery-1.jpg";
 import gallery2 from "../../asset/gallery-2.jpg";
 import { FcNext, FcPrevious } from "react-icons/fc";
 import { useState } from "react";
-import AppointmentService from "../../Service/book.service"
+import AppointmentService from "../../Service/book.service";
 import "./style.scss";
 import us from "../../asset/US.mp4";
 import haircut from "../../asset/haircut.png";
 import TypeIt from "typeit-react";
-
-
+import { Select } from 'antd';
+const { Option } = Select;
 
 const Home = (props) => {
   const [name, setName] = useState("");
   const [email_id, setemail_id] = useState("");
   const [appoint_date, setappoint_date] = useState();
   const onSave = async (e) => {
-    e.preventDefault();
-    e.stopPropagation();
     console.log("BookForm onSave...");
-    const data = await AppointmentService.saveAppointment({ 
-        name: name,
-        email_id: email_id,
-        appoint_date:appoint_date
+    const data = await AppointmentService.saveAppointment({
+      name: name,
+      email_id: email_id,
+      appoint_date: appoint_date,
     });
-}
-
-
+  };
 
   return (
     <div className="home">
@@ -150,7 +146,7 @@ const Home = (props) => {
                               id="form3Example1"
                               class="form-control"
                               placeholder="First Name"
-                              value={name} 
+                              value={name}
                               onChange={(e) => setName(e.target.value)}
                             />
                           </div>
@@ -173,18 +169,55 @@ const Home = (props) => {
                           id="form3Example3"
                           class="form-control"
                           placeholder="Email ID"
-                          value={email_id} 
+                          value={email_id}
                           onChange={(e) => setemail_id(e.target.value)}
                         />
                       </div>
-                      <div class="form mb-4">
-                      <Space direction="vertical" size={20}>
-      <DatePicker size="large" 
-      format={"DD-MM-YYYY"}
-   selected={appoint_date} 
-   onChange={e => setappoint_date(e)}  />
-      
-    </Space>
+                      <div class="row mb-4">
+                        <div class="col">
+                          <div class="form">
+                            <Space direction="vertical" size={20}>
+                              <DatePicker
+                                size="large"
+                                style={{
+                                  width: 210,
+                                }}
+                                status="warning"
+                                format={"DD-MM-YYYY"}
+                                value={appoint_date}
+                                onChange={(e) => setappoint_date(e)}
+                              />
+                            </Space>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form">
+                            <Select
+                              showSearch
+                              size="large"
+                              style={{
+                                width: 210,
+                              }}
+                              placeholder="Search to Select"
+                              optionFilterProp="children"
+                              filterOption={(input, option) =>
+                                option.children.includes(input)
+                              }
+                              filterSort={(optionA, optionB) =>
+                                optionA.children
+                                  .toLowerCase()
+                                  .localeCompare(optionB.children.toLowerCase())
+                              }
+                            >
+                              <Option value="1">Not Identified</Option>
+                              <Option value="2">Closed</Option>
+                              <Option value="3">Communicated</Option>
+                              <Option value="4">Identified</Option>
+                              <Option value="5">Resolved</Option>
+                              <Option value="6">Cancelled</Option>
+                            </Select>
+                          </div>
+                        </div>
                       </div>
                       <button
                         type="submit"
@@ -534,7 +567,5 @@ const Home = (props) => {
     </div>
   );
 };
-
-
 
 export default Home;
