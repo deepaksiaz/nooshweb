@@ -6,6 +6,7 @@ import makeup from "../../asset/makeup.webp";
 import manicure from "../../asset/manicure.png";
 import skincare from "../../asset/skincare.png";
 import gallery1 from "../../asset/gallery-1.jpg";
+import logo from "../../asset/logo noosh.png"
 import gallery2 from "../../asset/gallery-2.jpg";
 import { FcNext, FcPrevious } from "react-icons/fc";
 import { useState } from "react";
@@ -37,12 +38,13 @@ const Home = (props) => {
         <div className="home-navbar">
           <nav class="navbar navbar-expand-lg navbar-dark shadow-0 navbar-top">
             <div class="container-fluid">
-              <a class="navbar-brand me-2 logo-1" href="/">
-                NOOSH
+              <a class="navbar-brand logo-1" href="/">
+              <img src={logo} alt="" className="img-fluid" style={{width:"250px",marginTop:"-30px",marginLeft:"-40px"}}/>
               </a>
 
               <button
-                class="navbar-toggler"
+style={{marginTop:"-70px"}}                
+class="navbar-toggler"
                 type="button"
                 data-mdb-toggle="collapse"
                 data-mdb-target="#navbarButtonsExample"
@@ -53,7 +55,7 @@ const Home = (props) => {
                 <i class="fas fa-bars"></i>
               </button>
 
-              <div class="collapse navbar-collapse" id="navbarButtonsExample">
+              <div class="collapse navbar-collapse" id="navbarButtonsExample" style={{marginTop:"-60px"}}>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
                 <div class="d-flex align-items-center">
