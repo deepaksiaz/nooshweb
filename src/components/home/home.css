@@ -1,110 +1,96 @@
-.navbar-top
-{
+.navbar-top {
   width: 100%;
-  position:absolute;
-  top:0;
-  left:0;
-color: #ffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffff;
 }
-.nav-link
-{
- color: #ffff;
- font-size: 18px;
+.nav-link {
+  color: #ffff;
+  font-size: 18px;
 }
-.home-content-1
-{
+.home-content-1 {
   margin-top: 60px;
 }
 
-.home-navbar
-{
+.home-navbar {
   flex-flow: wrap;
   flex-direction: row;
   display: flex;
-  
+
   width: 100%;
 }
-.home-container-1
-{
-    width: 100%;
-    height:100vh;
-    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-    /* background-image: url("https://dk2h3gy4kn9jw.cloudfront.net/web-2019/5ca832ad/img/header-bg.e7c5c48.jpg");
+.home-container-1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url("https://dk2h3gy4kn9jw.cloudfront.net/web-2019/5ca832ad/img/header-bg.e7c5c48.jpg");
     background-repeat: no-repeat;
     background-size: cover; */
-    
 }
 
-.logo-1
-{
+.logo-1 {
   margin-top: 10px;
-  font-family: 'Vollkorn', serif;
-  color:#ffff;
+  font-family: "Vollkorn", serif;
+  color: #ffff;
   font-size: 34px;
 }
 
-.logo-2
-{
+.logo-2 {
   margin-left: 15px;
   margin-right: 15px;
-  font-family: 'Vollkorn', serif;
-  color:#ffff;
+  font-family: "Vollkorn", serif;
+  color: #ffff;
   font-size: 18px;
 }
 
-video
-{
-    position:absolute;
+video {
+  position: absolute;
   filter: brightness(85%);
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
-
-  .typewriter{
+.typewriter {
   font-size: 42px;
-  color:#ffff;
+  color: #ffff;
   font-weight: 700;
   display: flex;
-  }
+}
 
-  .home-content-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-   height: auto;
-    }
-    .mb-3-1
-    {
-      width:100% ;
-      color: #eceef3;
-      justify-content: space-between;
-      font-size: 22px;
-      padding: 0px;
-      font-style: bold;
-      font-weight: 350;
-    
-     
-      text-align: center;
-    }
-    .mb-3-2
-    {
-      padding-top: 15px;
-    }
+.home-content-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: auto;
+}
+.mb-3-1 {
+  width: 100%;
+  color: #eceef3;
+  justify-content: space-between;
+  font-size: 22px;
+  padding: 0px;
+  font-style: bold;
+  font-weight: 350;
 
- .home-content-3
- {
+  text-align: center;
+}
+.mb-3-2 {
+  padding-top: 15px;
+}
+
+.home-content-3 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -113,33 +99,27 @@ video
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, 0%);
- }   
- .home-sub-option
- {
-   padding-left: 30px;
-   padding-right: 30px;
-   color: #ffff ;
-  
- }
- 
- @media screen and (max-width:786px) {
-  .home-sub-option
-  {
+}
+.home-sub-option {
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #ffff;
+}
+
+@media screen and (max-width: 786px) {
+  .home-sub-option {
     padding-left: 18px;
     padding-right: 18px;
-    color: #ffff ;
-   
+    color: #ffff;
   }
- }
- .parent
- {
-  
+}
+.parent {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
- }
+}
 
-.card-one{
+.card-one {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -148,15 +128,15 @@ video
   height: 207px;
   margin: 10px;
   background-color: #ffffff;
-  -webkit-box-shadow: -1px 0px 12px -2px rgba(179,180,181,1);
- -moz-box-shadow: -1px 0px 12px -2px rgba(179,180,181,1);
-  box-shadow: -1px 0px 12px -2px rgba(179,180,181,1);
+  -webkit-box-shadow: -1px 0px 12px -2px rgba(179, 180, 181, 1);
+  -moz-box-shadow: -1px 0px 12px -2px rgba(179, 180, 181, 1);
+  box-shadow: -1px 0px 12px -2px rgba(179, 180, 181, 1);
   border-radius: 8px;
 }
 
-.header-wrap{
-display: flex;
-flex-direction: column;
+.header-wrap {
+  display: flex;
+  flex-direction: column;
 }
 .home-sub-option a {
   border-bottom: 3px salmon #ff8cbc;
@@ -164,7 +144,7 @@ flex-direction: column;
   transition: all 0.25s linear;
   position: relative;
   color: #ffff;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .home-sub-option a:before {
@@ -176,32 +156,24 @@ flex-direction: column;
   position: absolute;
   left: 0;
   bottom: -3px; /* this is to match where the border is */
-  transform-origin: left; 
+  transform-origin: left;
   transform: scale(0);
   transition: 0.25s linear;
-/*   will-change: transform; */
+  /*   will-change: transform; */
 }
 
 .home-sub-option a:hover:before {
   transform: scale(1);
 }
 
-.wrapper
-{
- 
+.wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-
-
 /* carsouel */
-
-
-
-
 
 /*
     code by Iatek LLC 2018 - CC 2.0 License - Attribution required
@@ -209,138 +181,171 @@ flex-direction: column;
 */
 @media (min-width: 768px) and (max-width: 991px) {
   /* Show 4th slide on md if col-md-4*/
-  .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -33.3333%;  /*change this with javascript in the future*/
-      z-index: -1;
-      display: block;
-      visibility: visible;
+  .carousel-inner
+    .active.col-md-4.carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%; /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   /* Show 3rd slide on sm if col-sm-6*/
-  .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -50%;  /*change this with javascript in the future*/
-      z-index: -1;
-      display: block;
-      visibility: visible;
+  .carousel-inner
+    .active.col-sm-6.carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%; /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
   }
 }
 @media (min-width: 576px) {
   .carousel-item {
-      margin-right: 0;
+    margin-right: 0;
   }
   /* show 2 items */
   .carousel-inner .active + .carousel-item {
-      display: block;
+    display: block;
   }
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
-      transition: none;
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item {
+    transition: none;
   }
   .carousel-inner .carousel-item-next {
-      position: relative;
-      transform: translate3d(0, 0, 0);
+    position: relative;
+    transform: translate3d(0, 0, 0);
   }
   /* left or forward direction */
   .active.carousel-item-left + .carousel-item-next.carousel-item-left,
   .carousel-item-next.carousel-item-left + .carousel-item,
   .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
   }
   /* farthest right hidden item must be also positioned for animations */
   .carousel-inner .carousel-item-prev.carousel-item-right {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      display: block;
-      visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
   }
   /* right or prev direction */
   .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
   .carousel-item-prev.carousel-item-right + .carousel-item,
   .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
   }
 }
 /* MD */
 @media (min-width: 768px) {
   /* show 3rd of 3 item slide */
   .carousel-inner .active + .carousel-item + .carousel-item {
-      display: block;
+    display: block;
   }
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-      transition: none;
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item
+    + .carousel-item {
+    transition: none;
   }
   .carousel-inner .carousel-item-next {
-      position: relative;
-      transform: translate3d(0, 0, 0);
+    position: relative;
+    transform: translate3d(0, 0, 0);
   }
   /* left or forward direction */
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
+  .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
   }
   /* right or prev direction */
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-      visibility: visible;
+  .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
   }
 }
 /* LG */
 @media (min-width: 991px) {
   /* show 4th item */
   .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
-      display: block;
+    display: block;
   }
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
-      transition: none;
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    transition: none;
   }
   /* Show 5th slide on lg if col-lg-3 */
-  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: absolute;
-      top: 0;
-      right: -25%;  /*change this with javascript in the future*/
-      z-index: -1;
-      display: block;
-      visibility: visible;
+  .carousel-inner
+    .active.col-lg-3.carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%; /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
   }
   /* left or forward direction */
-  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
+  .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
   }
   /* right or prev direction //t - previous slide direction last item animation fix */
-  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
-      position: relative;
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-      display: block;
-     
+  .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
   }
 }
 
-.btn-outline-info
-{
+.btn-outline-info {
   font-weight: 400;
 }
-.top-content
-{
+.top-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,45 +353,38 @@ flex-direction: column;
   background-color: #f6f9f9;
   padding: 40px 0px 94px 0px;
 }
-.color-card-main
-{
+.color-card-main {
   padding: 40px 0px 94px 0px;
 }
-.heading-1
-{
-  font-family: 'Playfair Display', serif;
+.heading-1 {
+  font-family: "Playfair Display", serif;
   padding-bottom: px;
   font-size: 28px;
   font-weight: 1000;
 }
-.service-1
-{ display: flex;
+.service-1 {
+  display: flex;
   flex-direction: row;
-flex-flow: wrap;
+  flex-flow: wrap;
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width:600px) {
- .wrapper
- {
-  padding-top: 100px;
- }
-  .mb-3-1
-  {
-
+@media screen and (max-width: 600px) {
+  .wrapper {
+    padding-top: 100px;
+  }
+  .mb-3-1 {
     font-size: 18px;
   }
 }
-.card-service
-{
+.card-service {
   width: 22rem;
   margin: 5px;
 }
 .card-service:hover {
   background-color: #eceef9;
   transform: translateY(-5px) scale(1.005) translateZ(0);
-  box-shadow: 24px 36px 24px 36px transparent,
-    0 0px 0px;
+  box-shadow: 24px 36px 24px 36px transparent, 0 0px 0px;
 }
 
 @media screen and (max-width: 600px) {
@@ -395,22 +393,15 @@ flex-flow: wrap;
     width: 80%;
     margin-bottom: 1rem;
   }
-  .card-service
-{
-  width: auto;
-
+  .card-service {
+    width: auto;
+  }
 }
 
-}
-
-
-
-.card-body
-{
+.card-body {
   display: flex;
-  flex-direction:column;
-text-align: center;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-
 }
