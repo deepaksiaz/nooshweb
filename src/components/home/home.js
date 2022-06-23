@@ -175,29 +175,25 @@ const Home = (props) => {
                       </div>
                       <div class="row mb-4">
                         <div class="col">
-                          <div class="form">
-                            <Space direction="vertical" size={20}>
+                          <div class="form mb-4">
+                  
                               <DatePicker
                                 size="large"
-                                style={{
-                                  width: 210,
-                                }}
+                                className="datetime"
                                 status="warning"
                                 format={"DD-MM-YYYY"}
                                 value={appoint_date}
                                 onChange={(e) => setappoint_date(e)}
                               />
-                            </Space>
+                          
                           </div>
                         </div>
                         <div class="col">
-                          <div class="form">
+                          <div class="form mb-4">
                             <Select
                               showSearch
                               size="large"
-                              style={{
-                                width: 210,
-                              }}
+                              className="datetime"
                               placeholder="Search to Select"
                               optionFilterProp="children"
                               filterOption={(input, option) =>

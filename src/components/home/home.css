@@ -386,8 +386,11 @@ video {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 24px 36px 24px 36px transparent, 0 0px 0px;
 }
-
-@media screen and (max-width: 600px) {
+.datetime
+{
+  width:100%;
+}
+@media screen and (max-width: 200px) {
   .button1,
   .button2 {
     width: 80%;
@@ -405,3 +408,5 @@ video {
   align-items: center;
   justify-content: center;
 }
+
+
