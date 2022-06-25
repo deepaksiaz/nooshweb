@@ -39,11 +39,11 @@ const Home = (props) => {
           <nav class="navbar navbar-expand-lg navbar-dark shadow-0 navbar-top">
             <div class="container-fluid">
               <a class="navbar-brand logo-1" href="/">
-              <img src={logo} alt="" className="img-fluid" style={{width:"250px",marginTop:"-30px",marginLeft:"-40px"}}/>
+              <img src={logo} alt="" className="img-fluid" style={{width:"250px",marginTop:"-30px",marginLeft:"-20px"}}/>
               </a>
 
               <button
-style={{marginTop:"-70px"}}                
+style={{marginTop:"-50px"}}                
 class="navbar-toggler"
                 type="button"
                 data-mdb-toggle="collapse"
@@ -55,7 +55,7 @@ class="navbar-toggler"
                 <i class="fas fa-bars"></i>
               </button>
 
-              <div class="collapse navbar-collapse" id="navbarButtonsExample" style={{marginTop:"-60px"}}>
+              <div class="collapse navbar-collapse" id="navbarButtonsExample" style={{marginTop:"-50px"}}>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
                 <div class="d-flex align-items-center">

@@ -3,17 +3,13 @@ import { Button, Nav } from "react-bootstrap";
 import "./footer.scss";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import {  FaFacebookF } from "react-icons/fa";
+import logo from "../../asset/logo noosh.png"
 function Footer() {
   return (
     <div className="Noosh-footer">
       <div className="footer-header">
         <div className="left-side-footer">
           <Nav as="ul">
-            <Nav.Item as="li">
-              <Nav.Link href="" className="nav-li">
-                Blog
-              </Nav.Link>
-            </Nav.Item>
             <Nav.Item as="li">
               <Nav.Link href="" className="nav-li">
                 About Us
@@ -35,9 +31,6 @@ function Footer() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-              <Nav.Link href="" className="nav-li">
-                Careers
-              </Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
               <Nav.Link href="" className="nav-li">
@@ -51,7 +44,7 @@ function Footer() {
       <div className="footer-middel">
         <div className="footer-middel-main">
           <div>
-            <p className="logo-1">NOOSH</p>
+          <img src={logo} alt="" className="img-fluid-2" />
           </div>
           <div className="middele-content">
             © 2022 Noosh Inc. All rights reserved

@@ -4,12 +4,17 @@
   background-color: #161718;
   color: #ffffff;
   width: 100%;
+  height: auto;
   flex-direction: row;
   justify-content: space-around;
   flex-flow: wrap;
-  margin-top: 100px;
-}
 
+}
+.img-fluid-2
+{
+  width:190px;
+  margin-top: -30px;
+}
 .footer-header {
   width: 1436px;
   height: 51px;
@@ -25,6 +30,9 @@
 
 .left-side-footer {
   display: flex;
+  flex-flow: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding-top: 24px;
   padding-bottom: 22px;
@@ -70,7 +78,7 @@
   display: flex;
   align-items: center;
   width: 1268px;
-  height: 40px;
+  height: 50px;
 }
 
 .logo-img {
@@ -79,8 +87,8 @@
 }
 
 .middele-content {
-  margin-left: 2rem;
-  margin-top: -2rem;
+  margin-left: -1.5rem;
+  margin-top: -0.5rem;
   font-size: 10px;
   line-height: 14px;
   color: #c2c2c2;
@@ -91,6 +99,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-top: -30px;
 }
 .s-m-l {
   width: 40px;
@@ -118,6 +127,7 @@
 }
 .nav-li {
   color: #ffffff;
+  font-size: 18px;
 }
 
 .s-m-l-logo {
@@ -150,21 +160,9 @@
     height: auto;
   }
   .left-side-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
+   font-size: 30px;
   }
-  .right-side-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-  }
+
   .but-1 {
     display: flex;
     flex-direction: column;
@@ -204,18 +202,12 @@
     align-items: center;
     width: auto;
     height: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 40px;
+   
     font-size: 14px;
   }
   .social-media-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    margin-bottom: 20px;
+   
   }
   .s-m-l {
     display: flex;
@@ -233,6 +225,6 @@
     align-items: center;
     width: auto;
     height: auto;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
