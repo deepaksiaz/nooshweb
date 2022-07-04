@@ -155,15 +155,17 @@ padding: 20px;
     width: 100%;
     padding: 20px;
     justify-content: center;
+    border-radius: 10px;
   }
   .box-1-2{
     width: 100%;
-    margin-top: 20px;
+  
     padding: 20px;
+    border-radius: 10px;
     justify-content: center;
   }
   .co-container-1 {
-    padding: 48px 0px;
+    padding:0px;
     justify-content: center;
   }
 

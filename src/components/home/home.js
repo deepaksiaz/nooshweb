@@ -222,7 +222,7 @@ class="navbar-toggler"
                         class="btn btn-primary btn-block mb-4"
                         onClick={onSave}
                       >
-                        Sign up
+                        Book Appointment
                       </button>
                     </form>
                   </div>
