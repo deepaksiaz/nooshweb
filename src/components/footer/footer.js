@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Nav } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 import "./footer.scss";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import {  FaFacebookF } from "react-icons/fa";

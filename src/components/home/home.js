@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import { DatePicker, Space } from "antd";
+import { DatePicker} from "antd";
 import specialist from "../../asset/specialists.jpg";
 import makeup from "../../asset/makeup.webp";
 import manicure from "../../asset/manicure.png";
@@ -501,7 +501,7 @@ class="navbar-toggler"
                 content.
               </p>
               <a href="#" class="btn btn-primary">
-                Go somewhere
+              Go somewhere
               </a>
             </div>
           </div>
