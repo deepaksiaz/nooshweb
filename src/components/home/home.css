@@ -380,6 +380,10 @@ video {
 }
 .card-service {
   width: auto;
+ 
+}
+.card-services {
+  width: 22rem;
   margin: 5px;
 }
 .card-service:hover {
@@ -396,9 +400,6 @@ video {
   .button2 {
     width: 80%;
     margin-bottom: 1rem;
-  }
-  .card-service {
-    width: auto;
   }
 }
 

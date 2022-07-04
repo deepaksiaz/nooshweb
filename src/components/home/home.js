@@ -423,7 +423,7 @@ class="navbar-toggler"
         </div>
 
         <div className="service-1">
-          <div className="card card-service">
+          <div className="card card-services">
             <div class="card-body">
               <center>
                 {" "}
@@ -440,7 +440,7 @@ class="navbar-toggler"
               </p>
             </div>
           </div>
-          <div className="card card-service">
+          <div className="card card-services">
             <div class="card-body">
               <center>
                 {" "}
@@ -457,7 +457,7 @@ class="navbar-toggler"
               </p>
             </div>
           </div>
-          <div className="card card-service">
+          <div className="card card-services">
             <div class="card-body">
               <center>
                 {" "}
@@ -476,7 +476,7 @@ class="navbar-toggler"
           </div>
         </div>
         <div className="service-1">
-          <div className="card card-service">
+          <div className="card card-services">
             <div class="card-body">
               <center>
                 {" "}
@@ -493,7 +493,7 @@ class="navbar-toggler"
               </p>
             </div>
           </div>
-          <div className="card card-service" style={{ height: "267px" }}>
+          <div className="card card-services" style={{ height: "267px" }}>
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">
@@ -505,7 +505,7 @@ class="navbar-toggler"
               </a>
             </div>
           </div>
-          <div className="card card-service" style={{ height: "267px" }}>
+          <div className="card card-services" style={{ height: "267px" }}>
             <div class="card-body">
               <h5 class="card-title">Special title treatment</h5>
               <p class="card-text">
