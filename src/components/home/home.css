@@ -379,7 +379,7 @@ video {
   }
 }
 .card-service {
-  width: 22rem;
+  width: auto;
   margin: 5px;
 }
 .card-service:hover {
