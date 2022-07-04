@@ -140,6 +140,15 @@ class="navbar-toggler"
                 <div class="modal-content">
                   <div class="modal-body">
                     <form>
+                      <center>
+                    <div class="row mb-4">
+                        <div class="col">
+                          <div class="form appoinment">
+                            WELCOME<br></br> BOOK YOUR APPOINTMENT
+                          </div>
+                        </div>
+                        </div>
+                        </center>
                       <div class="row mb-4">
                         <div class="col">
                           <div class="form">
@@ -152,7 +161,9 @@ class="navbar-toggler"
                               onChange={(e) => setName(e.target.value)}
                             />
                           </div>
+                          
                         </div>
+                        
                         <div class="col">
                           <div class="form">
                             <input
